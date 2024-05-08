@@ -1,0 +1,101 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    background-color: #cb95c7;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.app {
+    width: 500px;
+    padding: 10px;
+    border-radius: 6px;
+    position: absolute;
+    left: 4%;
+    top: 14%;
+}
+@media (max-width:767px) {
+    .app{
+        left: 0;
+    }
+}
+.app .title h3 img{
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    padding: 1px;
+    border: 2px solid gray;
+    margin-right: 9px;
+    position: relative;
+    top: -19px;
+}
+.app .title button {
+    background-color: purple;
+    padding: 12px;
+    border-radius: 28px;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    text-decoration: none;
+    width: 164px;
+    margin-top: 40px;
+}
+.app .title button i{
+    padding-right: 4px;
+}
+.app .title a :hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.app .title h3 span{
+    position: relative;
+    top: -62px;
+}
+.app h3{
+    font-size: 28px;
+    color: purple;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    font-family: cursive;
+}
+.app .note{
+    background-color: white;
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    position: relative;
+   margin: 30px 0;
+    height: 200px;
+    border-radius: 15px;
+}
+.app .notes{
+    height: 700px;
+}
+.app .note p{
+    height: 80%;
+    padding-left: 14px;
+    padding-top: 24px;
+    border-radius: 15px;
+    outline: none;
+    font-size: 22px;
+}
+.app .note i{
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: gray;
+    cursor: no-drop;
+}
+@media (max-width:767px) {
+    .app .title{
+        padding-top: 40px;
+    }
+    .app .title button {
+        margin-top: 0;
+    }
+}
