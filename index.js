@@ -5,6 +5,7 @@ let trash=document.querySelector(".fas fa-trash");
 let clear=document.getElementById("clear");
 
 
+
 btn.addEventListener("click",function(){
     let note=document.createElement("div");
     let i=document.createElement("i");
@@ -16,6 +17,7 @@ btn.addEventListener("click",function(){
     note.appendChild(p);
 });
 function show(){
+
     notesall.innerHTML=localStorage.getItem("note");
  }
  show();
@@ -45,4 +47,8 @@ function show(){
  });
  }
  });
+ clear.addEventListener("click", function(){
+    notesall.innerHTML=" ";
+    localStorage.clear();
+ })
  
